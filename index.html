@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="" >
+<head>
+  <!-- Theme Made By www.w3schools.com -->
+  <title>اجهزه مراقبه</title>
+  			<link rel="icon" type="image/png" href="imges/66.jpg" />
+
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css"> 
+  
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  
+  <link rel="styleSheet" href="css/fontawesome.min.css">
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+			
+  
+<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/droid-arabic-kufi" type="text/css"/>  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+  body {
+  direction :rtl;
+   font-family: 'DroidArabicKufiRegular';
+   font-weight: normal;
+   font-style: normal;
+    font: 400 15px ;
+    line-height: 1.8;
+    color: #818181;
+  }
+  h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #303030;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    color: #303030;
+    font-weight: 400;
+    margin-bottom: 30px;
+  }  
+  .jumbotron {
+    background-color: #f4511e;
+    color: #fff;
+    padding: 100px 25px;
+  }
+  .container-fluid {
+    padding: 60px 50px;
+  }
+  .bg-grey {
+    background-color: #f6f6f6;
+  }
+  .logo-small {
+    color: #f4511e;
+    font-size: 50px;
+  }
+  .logo {
+    color: #f4511e;
+    font-size: 200px;
+  }
+  .thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+  }
+  .thumbnail img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+  }
+  .carousel-control.right, .carousel-control.left {
+    background-image: none;
+    color: #f4511e;
+  }
+  .carousel-indicators li {
+    border-color: #f4511e;
+  }
+  .carousel-indicators li.active {
+    background-color: #f4511e;
+  }
+  .item h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    font-weight: 400;
+    font-style: italic;
+    margin: 70px 0;
+  }
+  .item span {
+    font-style: normal;
+  }
+  .panel {
+    border: 1px solid #f4511e; 
+    border-radius:0 !important;
+    transition: box-shadow 0.5s;
+  }
+  .panel:hover {
+    box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+  .panel-footer .btn:hover {
+    border: 1px solid #f4511e;
+    background-color: #fff !important;
+    color: #f4511e;
+  }
+  .panel-heading {
+    color: #fff !important;
+    background-color: #f4511e !important;
+    padding: 25px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  .panel-footer {
+    background-color: white !important;
+  }
+  .panel-footer h3 {
+    font-size: 32px;
+  }
+  .panel-footer h4 {
+    color: #aaa;
+    font-size: 14px;
+  }
+  .panel-footer .btn {
+    margin: 15px 0;
+    background-color: #f4511e;
+    color: #fff;
+  }
+  .navbar {
+    margin-bottom: 0;
+    background-color: #f4511e;
+    z-index: 9999;
+    border: 0;
+    font-size: 15px !important;
+    line-height: 1.42857143 !important;
+    border-radius: 0;
+   
+  }
+  .navbar li a, .navbar .navbar-brand {
+    color: #fff !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #f4511e !important;
+    background-color: #fff !important;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+  }
+  footer .glyphicon {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #f4511e;
+  }
+  .slideanim {visibility:hidden;}
+  .slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+      width: 100%;
+      margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+      font-size: 150px;
+    }
+	
+  }
+    #more {display: none;}
+  </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60" ">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#myPage">Security System</a>
+<img src="imges/ic.png" class="mr-auto  wow fadeInDown  " data-wow-duration="2.6s" data-wow-offset="5" style="width:170px;height:100px; padding:10px;">
+
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right ">
+	    
+                    <li><a href="#contact">تواصل معنا</a></li>
+		            <li><a href="#pricing">المعرض</a></li>
+
+					<li><a href="#portfolio">تفاصيل الخدمه </a></li>
+
+				    <li><a href="#services">الخدمات</a></li>
+
+				     <li><a href="#about">عن الشركه </a></li>
+
+				    <li><a href="index.html">الرئيسيه</a></li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron text-center">
+  <h1>شركه انظمه مراقبه</h1> 
+  <p>نحن نوفر انظمه امنيه متكامله </p> 
+  <form>
+    <div class="input-group">
+      <input type="email" class="form-control" size="50" placeholder="عنوان البريد الالكتروني" required>
+      <div class="input-group-btn">
+        <button type="button" class="btn btn-danger">اشترك</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<!-- Container (About Section) -->
+<div id="about" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+      <h2 style="color:#f4511e" class="wow zoomIn">نبذه عن الشركه</h2><br>
+      <h4> نحن نوفر انظمه امنيه متكامله منها كاميرات المراقبه اللاسلكيه </h4><br>
+      <p>نظام المراقبة اللاسلكي يرسل إشارة الفيديو إلى مسافات بعيدة  فمن هنا يمكنك مراقبة المواقع المطلوب متابعتها  بكل سهولة مهما كانت المسافة بعيدة عن وحدات التجميع والمتابعة الخاصة
+
+                                        (الفنادق – المدارس – المزارع – الملاعب)نحن نوفر انظمه امنيه متكامله منها كاميرات المراقبه اللاسلكيه نحن نوفر انظمه امنيه متكامله منها كاميرات المراقبه اللاسلكيه نحن نوفر انظم<span id="dots">...</span><span id="more">ه امنيه متكامله منها كاميرات المراقبه اللاسلكينحن نوفر انظمه امنيه متكامله منها كاميرات المراقبه اللاسلكيه نحن نوفر انظمه امنيه متكامله منها كاميرات المراقبه اللاسلكيهه.</p>
+										
+												                        	
+
+      <button class="btn btn-default btn-lg" onclick="myFunction()" id="myBtn" style="color:#f4511e;">عرض المزيد</button>
+    </div>
+    <div class="col-sm-4">
+	 				        <img src="imges/3.jpg" alt="" style="height:500px;width:100%">
+
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid bg-grey">
+  <div class="row">
+    <div class="col-sm-4">
+	  				        <img src="imges/1.png" alt="" style="height:500px;width:100%">
+
+    </div>
+    <div class="col-sm-8">
+      <h2 style="color:#f4511e">مهمتنا </h2><br>
+      <h4>ايصال كل ما هو <strong>جديد:</strong> من الأجهزة وملحقاتها من الأسواق العالميّة إلى السوق المحليّة.</h4><br>
+      <p> تحقيق منظومة خدمة زبائن متكاملة للأجهزة الإلكترونية تراعي أعلى المعايير في التخزين والعرض والتجهيز والاختبار والتسليم وخدمة ما بعد البيع .</p>
+    
+	    <h2 style="color:#f4511e">رسالتنا</h2><br>
+		<p>الارتقاء بمهنة بيع الحواسيب والأجهزة الإلكترونية إلى أعلى المعايير المهنيّة العالميّة والوصول إلى أعلى درجات رضا العملاء وشعورهم بالثقة الكاملة.</p>
+	
+	</div>
+  </div>
+</div>
+
+<!-- Container (Services Section) -->
+<div id="services" class="container-fluid text-center">
+  <h2 style="color:#f4511e" class="wow zoomIn">خدمتنا </h2>
+  <h4 style="color:#f4511e">نوفر انظمه امنيه متكاملة</h4>
+  <br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+	  <span class="glyphicon glyphicon-off logo-small"></span>
+                   <h4>كاميرات المراقبة</h4>
+				<p>حيث يتوفر لدينا كاميرات مراقبة ماركة DAHUA داخلية وخارجي وثابتة ومتحركة بوضوح ممتاز من 1 إلي 8 ميجا بكسل برؤية ليلية وكذلك كاميرات شبكية IP وكاميرات  ديجيتال HD</p>
+    </div>
+    <div class="col-sm-4">
+         <span class="glyphicon glyphicon-heart logo-small"></span>
+       <h4> إنذار الحريق </h4>
+	   <p>حيث يتوافر لدينا أنظمة الحريق المختلفة بنوعيها CONVENTIONAL و ADDRESSABLE بكامل مكونات النظام بماركات عالمية مشهود لها بالكفاءة</p>
+    </div>
+    <div class="col-sm-4">
+    <span class="glyphicon glyphicon-lock logo-small"></span>
+                                <h4>نظام إنذار السرقة</h4>
+								
+								<p>حيث يوجد لدينا نظام إنذار ضد السرقة يقوم بالإتصال هاتفياََ بخمسة أرقام يتم حفظها عليه عند حدوث إختراق أو حركة مشبوهة في المكان المراد تأمينه مع إمكانية سماع ما يدور في المكان في حالة حدوث إنذار</p>
+		                    
+    </div>
+  </div>
+  <br><br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      
+	  
+	 <span class="glyphicon glyphicon-leaf logo-small"></span>
+                                <h4>أجهزة الحضور والإنصراف</h4>
+								<p>حيث يوجد لدينا أجهزة بصمة بكافة أنواعها سواء كانت عن طريق الكارت الذكي أو بصمة إصبع أو بصمة الوجه لتسجل حضور وإنصراف الموظفين وتقييم آدائهم</p>
+	  
+    </div>
+    <div class="col-sm-4">
+      
+	<span class="glyphicon glyphicon-certificate logo-small"></span>
+                                <h4>سنترالات داخلية</h4>
+								<p>حيث يتوافر لدينا سنترالات داخلية لربط المكاتب والفروع ببعضها البعض داخل الشركة وإمكانية تحويل المكالمات من خط لأخر</p>
+	  
+    </div>
+    <div class="col-sm-4">
+     
+	 <span class="glyphicon glyphicon-wrench logo-small"></span>
+                                <h4>خدمات أخري</h4>
+								<p>مع ذلك، و رغم كثرة الخدمات التي نقدمها لم ننسي تحقيق التكامل للعميل، لذلك نوفر العديد والعديد من الأنظمة الأخري المستخدمة في مجال خدمة العملاء والأنظمة الصوتية وغيرها</p>
+	 
+    </div>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div id="portfolio" class="container-fluid text-center bg-grey">
+  <h2 style="color:#f4511e;" class="wow zoomIn">تفاصيل الخدمه </h2>
+  
+  <div class="row text-right slideanim">
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="imges/time.jpg" alt="imm" width="400" height="300">
+		 <p style="color:#f4511e;text-size:30px">ساعه البصمه الموظفين</p>
+        <p>  جهاز بصمة الاصبع للشركات | جهاز بصمة الاصبع|ماكنية الحضور والانصراف | برنامج الحضور والانصراف | جهاز الحضور والانصراف  جهاز بصمة الاصبع للشركات | جهاز بصمة الاصبع|ماكنية الحضور والانصراف | برنامج الحضور والانصراف | جهاز الحضور والانصرافبرنامج البصمة للحضور والانصرف | جهاز بصمة الاصبع للشركات | جهاز بصمة الاصبع|ماكنية الحضور والانصراف | برنامج الحضور والانصراف | جهاز الحضور والانصراف بالوجة |جهاز البصمة بالكارت | بصمة بطارية داخلية | جهاز بصمة اكسس كنترول | بصمة للدخول والخروج</p>
+      
+	   	<a href="#contact" target="formm" <button type="submit" class="btn "style="margin-bottom:30px;background-color:#f4511e;color:white">  اطلب الخدمه </button> </a>
+
+	  </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="imges/alarm.jpg" alt="im" width="400" height="300">
+        <p style="color:#f4511e;text-size:30px">أنذار السرقة</p>
+        <p>هو عباره عن جهاز إلكتروني يساعد على حماية المنازل ،الشركات ، المصانع وغير ذلك من المباني ضد السرقة ، فيقوم بتنبيه الشخص من خلال جرس او صفارة او اضواء او من خلال مكالمه تلفيونيه على الهاتف , الغرض الرئيسي من اجهزة الانذار ضد السرقه والاقتحام هو منع عملية السرقة او التسلل للمكان تتكون اجهزة الانذار كلها بشكل عام من عدة عناصروهي الوحدة الرئيسية المسئولة عن تشغيل الجهاز و الربط بينها وبين عدد من الحساسات فهذه</p>
+     
+        	   	<a href="#contact" target="formm" <button type="submit" class="btn "style="margin-bottom:30px;background-color:#f4511e;color:white">  اطلب الخدمه </button> </a>
+
+	 </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="imges/7.jpg" alt="immm" width="400" height="300">
+       	<p style="color:#f4511e;text-size:30px">كاميرات المراقبه</p>
+			<p> تميز كاميرات مراقبة الداخلية بدقة وضوح عالية جدا و امكانية التكبير و امكانية التسجيل الصوتى و الشكل الانسيابى دووم و امكانية التصوير الليلى ( night vision ) و وحدات IR متعددة لتشغيل خاصية SMART IR و اطار خارجى قوى لتحمل الصدمات و بها مستشعر اضاءة CMOS SENSOR و CCD SENSOR لتحسين الاضاءة فى الضوء المرتفع والمنخفض</p>
+      
+	   	   	<a href="#contact" target="formm" <button type="submit" class="btn "style="margin-bottom:30px;background-color:#f4511e;color:white">  اطلب الخدمه </button> </a>
+
+	  </div>
+    </div>
+  </div><br>
+  
+  <h2 style="color:#f4511e" class="wow zoomIn">رأئ عملائنا</h2>
+  <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <h4>"  هذه الشركه من افضل شركات التى تقدم اجهزةامنيه انا سعيد بهذه النتائج  "<br><span>احمد محمد</span></h4>
+      </div>
+      <div class="item">
+        <h4>"هي واحده من اعظم الشركات في التعامل والتوريد ... تحفه!!"<br><span>اياد اسلام</span></h4>
+      </div>
+      <div class="item">
+        <h4>"كم انا سعيد بالتعامل مع هذه الشركه من حيث الصيانه والشحن"<br><span>علي احمد</span></h4>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+<!-- Container (Pricing Section) -->
+<div id="pricing" class="container-fluid">
+  <div class="text-center">
+    <h2 style="color:#f4511e" class="wow zoomIn">المعرض</h2>
+    <h4 style="color:#f4511e">نحن نختار خطط موفره من اجلك</h4>
+  </div>
+  <div class="row slideanim">
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>كاميرات المراقبه</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>20</strong>لاسلكيه</p>
+          <p><strong>3</strong> كهربيه</p>
+          <p><strong>5</strong>الكترونيه</p>
+          <p><strong>2</strong> بصمة</p>
+          <p><strong>واخيرا</strong> كاميرا خارجى داهوا 1 ميجا بيكسل</p>
+		  		<img class="alarm2 wow jello"src="imges/ic.png" alt="">
+
+        </div>
+        <div class="panel-footer">
+          <h3>$19</h3>
+          <h4>في الشهر</h4>
+	   	   	<a href="#contact" target="formm" <button type="submit" class="btn "style="margin-bottom:30px;background-color:#f4511e;color:white">  اطلب الخدمه </button> </a>
+            
+		</div>
+      </div>      
+    </div>     
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>ساعه البصمة الموظفين</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>50</strong>اليد </p>
+          <p><strong>25</strong> الوجه</p>
+          <p><strong>10</strong> الكارت</p>
+          <p><strong>5</strong> الرقم السري</p>
+          <p><strong>واخيرا</strong> العين</p>
+		  		  		<img class="alarm2 wow jello"src="imges/3.jpg" alt="">
+
+        </div>
+        <div class="panel-footer">
+          <h3>$29</h3>
+          <h4>في الشهر</h4>
+	   	   	<a href="#contact" target="formm" <button type="submit" class="btn "style="margin-bottom:30px;background-color:#f4511e;color:white">  اطلب الخدمه </button> </a>
+        </div>
+      </div>      
+    </div>       
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>انذار الحريق</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>100</strong> لاسلكي </p>
+          <p><strong>50</strong>الكتروني</p>
+          <p><strong>25</strong> اسلكي</p>
+          <p><strong>10</strong> هوائي </p>
+          <p><strong>Endless</strong> الكتروني</p>
+		  
+		  		  		<img class="alarm2 wow jello"src="imges/1.gif" alt="">
+
+        </div>
+        <div class="panel-footer">
+          <h3>$49</h3>
+          <h4>في الشهر</h4>
+	   	   	<a href="#contact" target="formm" <button type="submit" class="btn "style="margin-bottom:30px;background-color:#f4511e;color:white">  اطلب الخدمه </button> </a>
+        </div>
+      </div>      
+    </div>    
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div id="contact" class="container-fluid bg-grey">
+  <h2 class="text-center wow zoomIn" style="color:#f4511e">تواصل معنا</h2>
+  			      <p class="text-right"style="color:#f4511e">قم بملئ الاستماره للتواصل معنا الرد خلال 24 ساعه</p>
+
+  <div class="row">
+    <div class="col-sm-5" style="color:#f4511e">
+      <p><span class="glyphicon glyphicon-map-marker"></span> العنوان : شبين الكوم - المنوفيه</p>
+      <p><span class="glyphicon glyphicon-phone"></span> رقم الهاتف : 0123456789</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> الدعم :info@pioneer.com</p>
+    </div>
+
+    <div class="col-sm-7 slideanim" >
+      <div class="row">
+        <div class="col-sm-6 form-group" >
+
+          <input class="form-control" id="name" name="name" placeholder="الاسم" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="البريد الالكتروني" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="ملاحظاتك" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit" style="background-color:#f4511e">ارسال</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Image of location/map -->
+ <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54970.37626425884!2d31.045011585571558!3d30.559233114507805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f7d68b68933ea3%3A0x77434af2db2fa06f!2z2LTYqNmK2YYg2KfZhNmD2YjZhdiMINmC2LPZhSDYtNio2YrZhiDYp9mE2YPZiNmF2Iwg2LTYqNmK2YYg2KfZhNmD2YjZhdiMINin2YTZhdmG2YjZgdmK2Kk!5e0!3m2!1sar!2seg!4v1526060516901" width="100%" height="500px" frameborder="0" style="border:0" allowfullscreen></iframe>
+		
+	 <!-- start Footer -->		
+<footer class="container-fluid text-center wow fadeIn">
+
+
+				
+				  <h5 style="font-size:20px;margin-bottom:20px;color:#ed1c24" class="wow jello">سوف تجدنا على </h5>
+				  <div class="">
+					<a href="https://www.facebook.com" target="-blank" ><i class="fa fa-facebook-official fa-3x hvr-pop"  style="color:#f4511e;padding-right:20px;" ></i></a>
+					<a href="https://www.instagram.com" target="-blank" ><i class="fa fa-instagram fa-3x hvr-pop" style="color:#f4511e;padding-right:20px;"></i></a>
+					<a href="https://www.snapchat.com" target="-blank" ><i class="fa fa-snapchat fa-3x hvr-pop" style="color:#f4511e;padding-right:20px;"></i></a>
+					<a href="https://www.pinterest.com" target="-blank" ><i class="fa fa-pinterest-p fa-3x hvr-pop" style=" color:#f4511e;padding-right:20px;"></i></a>
+					<a href="https://www.twitter.com" target="-blank" ><i class="fa fa-twitter fa-3x hvr-pop" style="color:#f4511e;padding-right:20px;"></i></a>
+					<a href="https://www.linkedin.com" target="-blank" ><i class="fa fa-linkedin fa-3x hvr-pop" style="color:#f4511e;padding-right:20px;"></i></a>
+				  </div>
+				  <br>
+
+
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+   <h5 > انظمة المراقبه والطابعات | جميع الحقوق محفوظه 2020  <br></h5>
+  <p>مصمم بواسطه بشمهندسه <a href="https://www.facebook.com/sara.zedan.376" title="Visit mywebsite" style="color:#f4511e">ساره رضا زيدان</a></p>
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+/*خاص بزر ال read more*/
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "عرض المزيد ";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "عرض اقل";
+    moreText.style.display = "inline";
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+}
+</script>
+<script src ="js/script.js"></script>
+
+</body>
+</html>
